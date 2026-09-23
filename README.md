@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# XAMPP Control
 
-## Getting Started
+A clean, native-feeling macOS control panel for managing an existing XAMPP installation without the clutter of a heavy dashboard.
 
-First, run the development server:
+This repository contains the marketing and download website for the XAMPP Control app, built with Next.js and designed to highlight the product, features, and installation requirements for Mac users.
+
+## Overview
+
+XAMPP Control is built for developers who run local web stacks on macOS and want a simple way to manage Apache, MySQL, and ProFTPD from one place.
+
+The product is intentionally lightweight and focused:
+
+- Start, stop, and monitor XAMPP services
+- Stay out of the way while you work locally
+- Keep the interface minimal and familiar for macOS users
+- Support both Apple Silicon and Intel Macs
+
+> Note: This repository is the website for the app. It does not install XAMPP itself; it is designed for users who already have XAMPP installed on their Mac.
+
+## Features
+
+- Service control panel for Apache, MySQL, and ProFTPD
+- Simple and fast workflow for local development
+- Clean, modern interface inspired by native macOS design
+- Clear download selection for Apple Silicon and Intel Macs
+- GitHub release and repository links
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- React Icons
+
+## Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+.
+├── public/
+│   └── screenshots/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── lib/
+│       └── downloads.ts
+├── package.json
+├── next.config.ts
+├── tailwind.config.ts
+├── tsconfig.json
+├── eslint.config.mjs
+├── postcss.config.js
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Download Links
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The site exposes direct download links to the app releases:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Apple Silicon: [XAMPP Control for Apple Silicon](https://github.com/YassineElkefi/XAMPP-Control-Panel/releases/download/1.0/XAMPP.Control-1.0.0-arm64.dmg)
+- Intel: [XAMPP Control for Intel](https://github.com/YassineElkefi/XAMPP-Control-Panel/releases/download/1.0/XAMPP.Control-1.0.0.dmg)
+- GitHub repository: [XAMPP-Control-Panel](https://github.com/YassineElkefi/XAMPP-Control-Panel)
+- Releases page: [GitHub Releases](https://github.com/YassineElkefi/XAMPP-Control-Panel/releases)
 
-## Learn More
+## Requirements
 
-To learn more about Next.js, take a look at the following resources:
+Before installing the app, the site expects the following:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- macOS 13 Ventura or newer
+- XAMPP 8.x installed
+- XAMPP located at /Applications/XAMPP
+- Apple Silicon or Intel Mac
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes
 
-## Deploy on Vercel
+This project is a single-page marketing and download site for the desktop app. The landing page includes:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- hero section and tagline
+- feature highlights
+- architecture/download section
+- system requirements
+- footer with GitHub link
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Repository
+
+- GitHub: [YassineElkefi/XAMPP-Control-Panel](https://github.com/YassineElkefi/XAMPP-Control-Panel)
