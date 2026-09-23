@@ -3,7 +3,7 @@ import Image from "next/image";
 export function ControlPanelPreview() {
   return (
     <div className="relative mx-auto max-w-[1100px]">
-      <div className="absolute -inset-4 rounded-[40px] bg-red-500/10 blur-[80px]" />
+      <div className="absolute -inset-4 rounded-[40px] transform-gpu bg-red-500/10 blur-[80px]" />
 
       <div className="relative overflow-hidden rounded-2xl shadow-black">
         <Image
